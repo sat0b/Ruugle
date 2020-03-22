@@ -43,7 +43,7 @@ OPTIONS:
 ### examples
 Build index from the crawled documents.
 ```
-$ cargo run --bin crawler -- --kvs_path kvs.json --num_crawls 10
+$ cargo run --bin indexer -- --kvs_path kvs.json --index_path index.json
 ```
 
 ## ruugle
