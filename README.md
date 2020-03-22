@@ -1,5 +1,11 @@
 # ruugle
 
+## build
+```
+$ cargo build --release
+$ cd target/release
+```
+
 ## crawler
 ```
 A Crawler for ruugle engine
@@ -20,7 +26,7 @@ OPTIONS:
 ### examples
 Crawl Web pages
 ```
-$ cargo run --bin crawler -- --kvs_path kvs.json --num_crawls 10
+$ crawler --kvs_path kvs.json --num_crawls 10
 ```
 
 ## indexer
@@ -43,7 +49,7 @@ OPTIONS:
 ### examples
 Build index from the crawled documents.
 ```
-$ cargo run --bin indexer -- --kvs_path kvs.json --index_path index.json
+$ indexer --kvs_path kvs.json --index_path index.json
 ```
 
 ## ruugle
@@ -67,6 +73,6 @@ ARGS:
 
 ### examples
 ```
-$ cargo run --bin ruugle -- news
+$ ruugle news
 SearchResults { hits: 1, results: [ResultField { id: 1, url: "https://en.wikipedia.org/wiki/WSCB" }] }
 ```
