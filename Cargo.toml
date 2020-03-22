@@ -1,0 +1,27 @@
+[package]
+name = "ruugle"
+version = "0.1.0"
+authors = ["Junichi Sato <sat0b.3ee@gmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "crawler"
+path = "src/bin/crawler.rs"
+
+[[bin]]
+name = "indexer"
+path = "src/bin/indexer.rs"
+
+[[bin]]
+name = "ruugle"
+path = "src/bin/ruugle.rs"
+
+[dependencies]
+reqwest = { version = "0.10", features = ["json", "blocking"] }
+log = "0.4.0"
+env_logger = "0.7.1"
+libxml = "*"
+regex = "1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = "2.20.3"
