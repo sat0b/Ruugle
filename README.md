@@ -1,4 +1,5 @@
-# ruugle
+# Ruugle
+`Ruugle` is a search engine written in Rust.
 
 ## build
 ```
